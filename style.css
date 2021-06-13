@@ -23,12 +23,20 @@ body {
 }
 
 .container {
-  background-image: url("/images/illustration-woman-online-desktop.svg");
+  background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
   background-repeat: no-repeat;
+  background-position: -20% 50%, 880% 65%;
   background-color: white;
-  width: 1000px;
-  height: 400px;
-  border-radius: 2rem;
+  width: 900px;
+  height: 500px;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container > img {
+  position: relative;
+  top: 40%;
+  left: -25%;
 }
 
 /*# sourceMappingURL=style.css.map */
