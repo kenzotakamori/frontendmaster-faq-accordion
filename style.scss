@@ -19,6 +19,9 @@ html {
     height: 100%;
     display: grid;
     place-content: center;
+    @media screen and (max-width: 900px) {
+        height: auto;
+    }
 }
 
 body {
@@ -29,6 +32,10 @@ body {
     height: 100%;
     display: grid;
     place-content: center;
+    @media screen and (max-width: 900px) {
+        width: 375px;
+        height: auto;
+    }
 }
 
 .container {
@@ -46,6 +53,19 @@ body {
         position: relative;
         top: 40%;
         left: -25%;
+        @media screen and (max-width: 900px) {
+            left: 50%;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        margin: 10rem 0 10rem;
+        width: 90vw;
+        max-width: 500px;
+        height: auto;
+        grid-template-columns: unset;
+        grid-auto-flow: row;
+        background-image: url('/images/bg-pattern-mobile.svg');
+        background-position:0% 0%;
     }
 }
 
@@ -79,5 +99,26 @@ body {
                 display: block;
             }
         }
+    }
+
+    @media screen and (max-width: 900px) {
+        height: 25rem;
+        padding: 0 2rem;
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+
+.img-mobile {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .img-mobile {
+        display: block;
+    }
+    .img-desktop {
+        display: none;
     }
 }

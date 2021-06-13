@@ -11,6 +11,11 @@ html {
   display: grid;
   place-content: center;
 }
+@media screen and (max-width: 900px) {
+  html {
+    height: auto;
+  }
+}
 
 body {
   font-size: 12px;
@@ -20,6 +25,12 @@ body {
   height: 100%;
   display: grid;
   place-content: center;
+}
+@media screen and (max-width: 900px) {
+  body {
+    width: 375px;
+    height: auto;
+  }
 }
 
 .container {
@@ -38,6 +49,23 @@ body {
   position: relative;
   top: 40%;
   left: -25%;
+}
+@media screen and (max-width: 900px) {
+  .container > img {
+    left: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 10rem 0 10rem;
+    width: 90vw;
+    max-width: 500px;
+    height: auto;
+    grid-template-columns: unset;
+    grid-auto-flow: row;
+    background-image: url("/images/bg-pattern-mobile.svg");
+    background-position: 0% 0%;
+  }
 }
 
 .text-section {
@@ -71,6 +99,29 @@ body {
 }
 .text-section ul li.active .answer {
   display: block;
+}
+@media screen and (max-width: 900px) {
+  .text-section {
+    height: 25rem;
+    padding: 0 2rem;
+  }
+  .text-section h1 {
+    text-align: center;
+  }
+}
+
+.img-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .img-mobile {
+    display: block;
+  }
+
+  .img-desktop {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
