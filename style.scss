@@ -14,3 +14,28 @@ $light-grayish-blue: hsl(240, 5%, 91%);
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
+html {
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+body {
+    font-size: 12px;
+    width: 1440px;
+    background-image: linear-gradient($soft-violet, $soft-blue);
+    background-repeat: no-repeat;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    background-image: url('/images/illustration-woman-online-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 1000px;
+    height: 400px;
+    border-radius: 2rem;
+}
