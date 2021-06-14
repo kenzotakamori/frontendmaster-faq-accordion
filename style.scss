@@ -55,18 +55,19 @@ body {
         top: 40%;
         left: -25%;
         @media screen and (max-width: 900px) {
-            left: 50%;
+            left: 7%;
+            top: -75%;
         }
     }
     @media screen and (max-width: 900px) {
         margin: 10rem 0 10rem;
-        width: 90vw;
+        width: 95%;
         max-width: 500px;
         height: auto;
         grid-template-columns: unset;
-        grid-auto-flow: row;
+        grid-template-rows: 140px 1fr;
         background-image: url('/images/bg-pattern-mobile.svg');
-        background-position:0% 0%;
+        background-position: 50% 0%;
     }
 }
 
